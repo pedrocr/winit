@@ -83,7 +83,6 @@
 #[macro_use]
 extern crate lazy_static;
 
-#[macro_use]
 extern crate shared_library;
 
 extern crate libc;
@@ -117,9 +116,6 @@ extern crate wayland_client;
 
 pub use events::*;
 pub use window::{AvailableMonitorsIter, MonitorId};
-
-#[macro_use]
-mod api_transition;
 
 mod platform;
 mod events;
